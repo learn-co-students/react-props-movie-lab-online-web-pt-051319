@@ -7,19 +7,19 @@ import four from '../assets/stars/4-stars.png'
 import five from '../assets/stars/5-stars.png'
 
 const imgMapper = {
-  0: <img>zero</img>,
-  1: <img>one</img>, 
-  2: <img>two</img>, 
-  3: <img>three</img>, 
-  4: <img>four</img>, 
-  5: <img>five</img>,
+  0: <img src={zero}></img>,
+  1: <img src={one}></img>, 
+  2: <img src={two}></img>, 
+  3: <img src={three}></img>, 
+  4: <img src={four}></img>, 
+  5: <img src={five}></img>,
   6: <h4>No Rating Found</h4>
 }
 
 export default class CardBack extends Component {
 
   generateRatingElement = () => {
-    return imgMapper[this.props.IMDBRating || 6]
+    return imgMapper[this.props.rating || 6]
   }
 
   render() {
