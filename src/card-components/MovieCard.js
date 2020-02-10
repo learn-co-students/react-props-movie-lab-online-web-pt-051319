@@ -33,7 +33,7 @@ export default class MovieCard extends Component {
     return (
       <div className="movie-card">
         <CardFront poster={posterMap[poster]} />
-        <CardBack rating={IMDBRating} title={title} genres={genres} />
+        <CardBack IMDBRating={IMDBRating} title={title} genres={genres} />
       </div>
     )
   }

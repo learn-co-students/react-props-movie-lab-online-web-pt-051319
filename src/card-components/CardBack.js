@@ -19,7 +19,7 @@ const imgMapper = {
 export default class CardBack extends Component {
 
   generateRatingElement = () => {
-    return imgMapper[this.props.rating || 6]
+    return imgMapper[this.props.IMDBRating || 6]
   }
 
   render() {
